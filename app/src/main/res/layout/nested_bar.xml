@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_thread"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+
+    <TextView
+        android:id="@+id/lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorBtnDark"
+        android:gravity="center"
+        android:padding="@dimen/px_10"
+        android:text="Threded reply Messages"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/px_15"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="@dimen/px_20"
+        android:layout_height="@dimen/px_20"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/px_10"
+        android:src="@drawable/ic_close"
+        android:tint="@color/colorWhite"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/img_right_star_nested"
+        android:layout_width="@dimen/px_22"
+        android:layout_height="@dimen/px_22"
+        android:layout_margin="@dimen/px_10"
+        android:layout_toLeftOf="@+id/img_close"
+        android:tint="@color/colorWhite"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_right_delete_nested"
+        android:layout_width="@dimen/px_22"
+        android:layout_height="@dimen/px_22"
+        android:layout_margin="@dimen/px_10"
+        android:layout_marginLeft="@dimen/px_10"
+        android:src="@drawable/delete"
+        android:layout_toLeftOf="@+id/img_right_star_nested"
+        android:tint="@color/colorWhite"
+        android:visibility="gone" />
+
+</RelativeLayout>

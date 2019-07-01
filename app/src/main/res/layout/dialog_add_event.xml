@@ -1,0 +1,342 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:minWidth="1500dp"
+    android:minHeight="1500dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBtnDark">
+
+        <TextView
+            android:id="@+id/lbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px_10"
+            android:padding="@dimen/px_10"
+            android:text="Add Event"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/px_15"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/px_20"
+            android:layout_height="@dimen/px_20"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/px_10"
+            android:src="@drawable/ic_close"
+            android:tint="@color/colorWhite"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:id="@+id/img_right_star_nested"
+            android:layout_width="@dimen/px_22"
+            android:layout_height="@dimen/px_22"
+            android:layout_margin="@dimen/px_10"
+            android:layout_toLeftOf="@+id/img_close"
+            android:tint="@color/colorWhite"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_right_delete_nested"
+            android:layout_width="@dimen/px_22"
+            android:layout_height="@dimen/px_22"
+            android:layout_margin="@dimen/px_10"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_toLeftOf="@+id/img_right_star_nested"
+            android:src="@drawable/delete"
+            android:tint="@color/colorWhite"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll_creategrp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginTop="@dimen/px_10"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_marginBottom="@dimen/px_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event Name" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_65"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+
+                    <EditText
+                        android:id="@+id/edit_group_nm"
+                        style="@style/edittext_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px_50"
+                        android:layout_weight="1"
+                        android:hint="Enter Event Name"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:paddingLeft="@dimen/px_15"
+                        android:paddingRight="@dimen/px_15" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event Location" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_65"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+
+                    <!-- <fragment android:id="@+id/autocomplete_fragment"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                         />
+ -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/px_5"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Start Date" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Time" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/px_5"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/edit_start_date"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/px_50"
+                            android:layout_weight="2"
+                            android:background="@drawable/edit_back"
+                            android:drawableLeft="@mipmap/ic_event"
+                            android:drawablePadding="@dimen/px_2"
+                            android:gravity="start|center"
+                            android:hint="DD/MM/YYYY"
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:paddingRight="@dimen/px_15"
+                            android:textColorHint="#B0B0B0" />
+
+
+                        <TextView
+                            android:id="@+id/edit_start_time"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/px_50"
+                            android:layout_marginLeft="@dimen/px_5"
+                            android:layout_weight="2"
+                            android:background="@drawable/edit_back"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:drawablePadding="@dimen/px_5"
+                            android:gravity="start|center"
+                            android:hint="HH:MM:SS"
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:paddingLeft="@dimen/px_5"
+                            android:paddingRight="@dimen/px_15"
+                            android:textColorHint="#B0B0B0" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/px_5"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="End Date" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Time" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/px_5"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/edit_end_date"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/px_50"
+                            android:layout_weight="2"
+                            android:background="@drawable/edit_back"
+                            android:drawableLeft="@mipmap/ic_event"
+                            android:gravity="start|center"
+                            android:hint="DD/MM/YYYY"
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:paddingRight="@dimen/px_15"
+                            android:textColorHint="#B0B0B0" />
+
+
+                        <TextView
+                            android:id="@+id/edit_end_time"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/px_50"
+                            android:layout_marginLeft="@dimen/px_5"
+                            android:layout_weight="2"
+                            android:background="@drawable/edit_back"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:drawablePadding="@dimen/px_5"
+                            android:gravity="start|center"
+                            android:hint="HH:MM:SS"
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:paddingLeft="@dimen/px_5"
+                            android:paddingRight="@dimen/px_15"
+                            android:textColorHint="#B0B0B0" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px_80"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/px_5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/px_10"
+                            android:text="Persona" />
+
+                        <Spinner
+                            android:id="@+id/spin_persona"
+                            style="@style/edittext_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/px_50"
+                            android:paddingLeft="@dimen/px_5"
+                            android:paddingRight="@dimen/px_15" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Invitees" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px_65"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:id="@+id/edit_envitee"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/px_50"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_back"
+                            android:drawableLeft="@drawable/ic_add_circle"
+                            android:drawablePadding="@dimen/px_5"
+                            android:drawableTint="@color/colorMsgAll"
+                            android:gravity="start|center"
+                            android:hint="Add Invitees "
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:paddingLeft="@dimen/px_5"
+                            android:paddingRight="@dimen/px_15"
+                            android:textColorHint="#B0B0B0" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px_50"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner"
+                        android:text="ADD EVENT"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/px_14" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

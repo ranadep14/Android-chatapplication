@@ -1,0 +1,265 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.cloudsinc.welltekmobile.nativechatapplication.fragments.contacts.ContactProfileFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--<include layout="@layout/cutomise_action_bar"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1.5">
+            <ImageView
+                android:id="@+id/userprofileimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile_pic"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="-70dp"
+                android:layout_marginLeft="@dimen/px_18"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adam Sandler"
+                    android:textSize="@dimen/px_22"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:layout_weight="0.5"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_edit"
+                    android:layout_width="@dimen/px_35"
+                    android:layout_height="@dimen/px_35"
+                    android:layout_marginBottom="@dimen/px_20"
+                    android:padding="@dimen/px_5"
+                    android:layout_marginRight="@dimen/px_5"
+                    android:src="@drawable/ic_edit"
+                    app:layout_collapseMode="parallax"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_anchor="@id/collapsing_toolbar_recycler_view">
+
+
+                    <TextView
+                        android:id="@+id/txt_lbl_showmedia_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@drawable/ic_back_media"
+                        android:paddingTop="@dimen/px_10"
+                        android:paddingRight="@dimen/px_10"
+                        android:text=""
+                        android:textSize="@dimen/px_18"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/txt_lbl_media"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_lbl_showmedia_count"
+                        android:paddingLeft="@dimen/px_30"
+                        android:paddingTop="@dimen/px_10"
+                        android:text="Media"
+                        android:textSize="@dimen/px_18"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/txt_loadmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_lbl_showmedia_count"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/px_10"
+                        android:gravity="right"
+                        android:text="Load More.."
+                        android:textSize="@dimen/px_18"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                android:layout_marginLeft="@dimen/px_20"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_60">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mail"
+                    android:padding="@dimen/px_5"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="5"/>
+                <TextView
+                    android:id="@+id/txt_user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="adam.sandler@mstorm.com"
+                    android:textSize="@dimen/px_17"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_60">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/call"
+                    android:padding="@dimen/px_5"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="5"/>
+                <TextView
+                    android:id="@+id/txt_user_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+91 9923456789"
+                    android:textSize="@dimen/px_17"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_60"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/txt_more_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_details_text"
+                    android:textColor="@color/colorLinkTxt"
+                    android:textSize="@dimen/px_18"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_20" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_60">
+                <TextView
+                    android:id="@+id/txt_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorLinkTxt"
+                    android:textSize="@dimen/px_18"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/txt_decline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:textColor="@color/colorLinkTxt"
+                    android:textSize="@dimen/px_18"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/px_20" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lin_main_actionbar"
+        android:orientation="horizontal"
+        android:background="@color/colorTransparent"
+        android:layout_height="@dimen/px_45">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_10"
+                android:src="@drawable/ic_back"/>
+
+            <TextView
+                android:id="@+id/txt_action_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_10"
+                android:text="@string/add_contact"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/px_15" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profile_option_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_15"
+                android:layout_marginRight="@dimen/px_10"
+                android:src="@drawable/more" />
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/px_15"
+        android:scaleType="center"
+        app:backgroundTint="#003E7E"
+        android:src="@drawable/msg_bubble"
+        android:visibility="gone"/>
+</FrameLayout>

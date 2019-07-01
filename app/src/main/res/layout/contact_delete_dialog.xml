@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_150"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="@dimen/px_20"
+        android:layout_height="@dimen/px_20"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/px_10"
+        android:src="@drawable/ic_close"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_50"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_delte"
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:layout_marginRight="@dimen/px_30"
+            android:src="@drawable/ic_delete_black_24dp"/>
+        <TextView
+            android:id="@+id/txt_delte"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_30"
+            android:text="Delete Contact"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progbar_makeadmin"
+            android:layout_width="@dimen/px_50"
+            android:layout_height="@dimen/px_50"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/px_10"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_removeadmin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_50"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/img_removeAdmin"
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:layout_marginRight="@dimen/px_30"
+            android:src="@drawable/profile_user_in"/>
+        <TextView
+            android:id="@+id/txt_removeAdmin"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_30"
+            android:text="Remove Admin"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_50"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_block"
+            android:layout_width="@dimen/px_30"
+            android:layout_height="28dp"
+            android:layout_marginRight="@dimen/px_30"
+            android:src="@drawable/cancelimage" />
+        <TextView
+            android:id="@+id/txt_block"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_50"
+            android:text="Block Contact"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

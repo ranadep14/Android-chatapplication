@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@color/colorWhite"
+    android:minHeight="1500dp"
+    android:minWidth="1500dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="@dimen/px_20"
+        android:layout_height="@dimen/px_20"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_close" />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="440dp"
+        android:layout_centerInParent="true"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_upload_file"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progbar_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/px_5"
+            android:visibility="gone" />
+
+
+        <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="@dimen/px_100"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px_20"
+        android:background="@color/colorBtnDark"
+        android:text="Upload"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</LinearLayout>

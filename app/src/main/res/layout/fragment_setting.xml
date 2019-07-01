@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/px_10"
+    android:orientation="vertical"
+    tools:context="com.cloudsinc.welltekmobile.nativechatapplication.fragments.setting.SettingFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_profile"
+        android:layout_width="@dimen/px_150"
+        android:layout_height="@dimen/px_150"
+        android:layout_gravity="center"
+        android:background="@drawable/profile_shadow">
+
+
+        <ImageView
+            android:id="@+id/img_user_profile"
+            android:layout_width="@dimen/px_150"
+            android:layout_height="@dimen/px_150"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile_user_in" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_edit"
+            android:layout_width="@dimen/px_50"
+            android:layout_height="@dimen/px_50"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:src="@drawable/ic_edit"
+            app:layout_anchorGravity="bottom|right|end" />
+
+
+        <ProgressBar
+            android:id="@+id/search_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_100"
+            android:layout_centerInParent="true"
+            android:progressTint="@color/colorBlueTxt"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_5"
+        android:text="Personal Details"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/px_18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_5"
+        android:text="Name"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/px_16" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_5"
+        android:text="User Dev"
+        android:textSize="@dimen/px_14" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_5"
+        android:text="User Name"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/px_16" />
+
+
+    <TextView
+        android:id="@+id/txt_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_5"
+        android:text="user.dev@clouzer.com"
+        android:textSize="@dimen/px_14" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_5"
+        android:text="Personal Email Id"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/px_16" />
+
+
+    <TextView
+        android:id="@+id/txt_personal_mail_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_5"
+        android:text="ankitaaitawade48@gmail.com"
+        android:textSize="@dimen/px_14" />
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorMsgAll"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:id="@+id/lin_main"
+   >
+
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/px_20"
+        android:layout_height="@dimen/px_20"
+        android:src="@drawable/ic_close"/>
+
+    <RelativeLayout
+        android:background="@color/colorMsgAll"
+        android:orientation="vertical"
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
+        android:layout_height="440dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/px_50"
+            android:layout_height="@dimen/px_50"
+            android:indeterminateTint="@color/colorBtnDark"/>
+        <TextView
+            android:id="@+id/txt_no_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Please search contact"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/px_18"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/px_20"
+            android:layout_weight="1"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_forward"
+        android:layout_marginBottom="@dimen/px_20"
+        android:background="@color/colorBtnDark"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/px_100"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:text="Forward"/>
+</RelativeLayout>

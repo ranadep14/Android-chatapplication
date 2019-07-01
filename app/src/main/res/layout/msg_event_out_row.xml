@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_chat"
+    android:longClickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_5"
+        android:layout_marginBottom="@dimen/px_5"
+        android:layout_marginRight="@dimen/px_15"
+        android:orientation="vertical">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+            <LinearLayout
+                android:layout_width="@dimen/px_300"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                   >
+                    <TextView
+                        android:id="@+id/txt_sender_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="to"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/px_12"
+                        android:alpha=".52"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_image_out"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/msg_event_bg"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_chat_event"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="@dimen/px_80"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:background="@drawable/msg_blue_bg">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        >
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/txt_month"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jun"
+                                                android:layout_marginLeft="@dimen/px_20"
+                                                android:textColor="@color/colorWhite"
+                                                android:textSize="@dimen/px_12" />
+
+                                            <TextView
+                                                android:id="@+id/txt_date"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/px_20"
+                                                android:text="26"
+                                                android:layout_marginTop="@dimen/px_5"
+                                                android:textColor="@color/colorWhite"
+                                                android:textSize="@dimen/px_16" />
+
+                                            <TextView
+                                                android:id="@+id/txt_time"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginLeft="@dimen/px_5"
+                                                android:text="04:41 PM"
+                                                android:textColor="@color/colorWhite"
+                                                android:textSize="@dimen/px_12" />
+
+
+                                        </LinearLayout>
+
+                                    </FrameLayout>
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/txt_msg_info"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="@dimen/px_4"
+                                    android:textAllCaps="false"
+                                    android:text="Today" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                       </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right">
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

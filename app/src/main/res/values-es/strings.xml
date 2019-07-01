@@ -1,0 +1,140 @@
+<resources>
+    <!--<string name="app_name">NativeChatApplication</string>-->
+    <string name="app_name">CloudsChat</string>
+    <!--this is spanish-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_removed">You can\'t send messages to this group because you\'re no longer a participant.</string>
+
+    <string name="wellcome_title">BIENVENIDO A CLOUZER CHAT</string>
+    <string name="wellcome_title1">Puedes comenzar con los existentes</string>
+    <string name="wellcome_title2">Clouzer Id o crea uno nuevo</string> RELOJ
+    <string name="login_frag_title">Clouzer Id o crea uno nuevo</string>
+    <string name="sign_frag_title">CREAR CUENTA MSTORM</string>
+    <string name="otp_frag_title">INGRESAR EL CÓDIGO DE VERIFICACIÓN</string>
+    <string name="login_btn">INICIAR SESIÓN</string>
+    <string name="signup_btn">REGÍSTRATE</string>
+    <string name="signup_text"><u>REGÍSTRATE</u></string>
+    <string name="next_btn">SIGUIENTE</string>
+    <string name="otp_verify_btn">VERIFICAR</string>
+    <string name="txt_login"><u>iniciar sesión</u></string>
+    <string name="txt_resend_otp"><u>REENVIAR CODIGO</u></string>
+    <string name="txt_reset_pwd">RESTABLECER LA CONTRASEÑA</string>
+    <string name="txt_reset_using_sec_code">RESTABLECER UTILIZANDO EL CÓDIGO DE SEGURIDAD</string>
+    <string name="txt_send_code">ENVIAR CÓDIGO</string>
+    <string name="inbox_text">BANDEJA DE ENTRADA</string>
+    <string name="contacts_text">CONTACTO</string>
+    <string name="agenda_text">AGENDA</string>
+    <string name="setting_text">AJUSTES</string>
+
+    <string name="login_id_hint">ID de Clouzer</string>
+    <string name="pwd_hint">Contraseña</string>
+    <string name="rpwd_hint">Repite la contraseña</string>
+    <string name="new_pwd_hint">Nueva contraseña</string>
+    <string name="re_enter_pwd_hint">Escriba la contraseña otra vez</string>
+    <string name="reset_pwd">REINICIAR</string>
+    <string name="fname_hint">Nombre de pila</string>
+    <string name="lname_hint">Apellido</string>
+    <string name="choose_mstormid_hint">Elija ID de Mstorm</string>
+    <string name="pemail_id_hint">ID de correo electrónico personal</string>
+    <string name="varification_hint">Esta identificación se usará para la verificación</string>
+    <string name="progress_wait">Por favor espera...</string>
+
+    <string name="accept_req_text"><u>ACEPTAR</u></string>
+    <string name="reject_req_text"><u>RECHAZAR</u></string>
+    <string name="decline_text"><u>DISMINUCIÓN</u></string>
+    <string name="more_details_text"><u>Más detalles</u></string>
+    <string name="app_exit_msg">¿Quieres salir? </string>
+
+    <!--login time validation strings-->
+    <string name="empty_password">La contraseña no puede estar vacía.</string>
+    <string name="password_short">La contraseña es demasiado corta.</string>
+    <string name="password_long">La contraseña es demasiado larga.</string>
+    <string name="empty_user_id">La identificación del usuario no puede estar vacía.</string>
+    <string name="valid_user_id">Por favor introduzca ID de usuario válido.</string>
+    <string name="empty_username_password">Por favor ingrese su nombre de usuario y contraseña</string>
+    <string name="forgot_password">¿SE TE OLVIDÓ TU CONTRASEÑA?</string>
+    <string name="enter_valid_password">Por favor ingrese una contraseña válida</string>
+    <string name="login_response_not_received">Sin respuesta. Por favor, intente iniciar sesión de nuevo.</string>
+
+    <!--login success string-->
+    <string name="login_success_msg">Inicio de sesión exitoso</string>
+
+    <!--Create Conversation-->
+    <string name="create_conversation">Crear conversación</string>
+    <string name="no_conversation">Sin conversación disponible</string>
+
+    <!-- path for img intent-->
+    <string name="messages" >Mensajes</string>
+
+    <!--sign up time validation strings-->
+    <string name="empty_firstname">Ingresa el primer nombre</string>
+    <string name="empty_lastname">Introduzca el apellido</string>
+    <string name="invalid_firstname">Nombre inválido</string>
+    <string name="invalid_lastname">Apellido inválido</string>
+    <string name="empty_mstorm_id">Ingresa la identificación mstorm</string>
+    <string name="invalid_mstorm_id">ID de Mstorm no válido</string>
+    <string name="invalid_personal_mail_id">ID de correo electrónico personal no válido</string>
+    <string name="empty_personal_mail_id">Ingresa su ID de correo electrónico personal</string>
+    <string name="empty_repeat_password">Ingrese el campo repetir contraseña</string>
+    <string name="repeat_password_not_match">La contraseña y la contraseña no coinciden</string>
+    <string name="signup_response_not_received">No hay respuesta. Por favor, intente registrarse de nuevo.</string>
+    <string name="only_special_characters_or_numbers">Debe contener al menos un carácter.</string>
+
+    <!--internet related strings-->
+    <string name="internet_not_available">Dispositivo no conectado a Internet</string>
+
+    <!--drawer strings-->
+    <string name="drawer_inbox">Bandeja de entrada</string>
+    <string name="drawer_contacts">Contactos</string>
+    <string name="drawer_agenda">Agenda</string>
+    <string name="drawer_settings">Configuraciones</string>
+    <string name="drawer_log_out">Cerrar sesión</string>
+    <string name="logout_que">¿Quieres desconectarte?</string>
+
+    <!--add contact fragment-->
+    <string name="add_contact">Agregar contacto</string>
+    <string name="no_msg_available">Sin mensaje dentro del grupo</string>
+
+    <!--Forgot password strings-->
+    <string name="recover_password">Recuperar contraseña</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="personal_emailid">ID de correo electrónico personal</string>
+    <string name="submit">Enviar</string>
+    <string name="forget_password">Email sent to mail id</string>
+    <string name="forgot_password_wrong_username">El nombre de usuario o la identificación de correo personal es incorrecta, vuelva a ingresar.</string>
+    <string name="empty_password_resetPassword">Por favor ingrese la contraseña y reinicie la contraseña</string>
+    <string name="password_reset_done">Restablecimiento de la contraseña hecho con éxito ...</string>
+    <string name="empty_username_emailId">Por favor ingrese su nombre de usuario y correo electrónico</string>
+    <string name="invalid_username_emailId">Por favor, introduzca un nombre de usuario y una identificación de correo electrónico válidos</string>
+
+    <!--Change password strings-->
+    <string name="change_pwd">CAMBIA LA CONTRASEÑA</string>
+    <string name="confirm_new_pwd">Confirmar nueva contraseña</string>
+    <string name="set_new_pwd">ESTABLECER NUEVA CONTRASEÑA</string>
+    <string name="back_to_login">ATRÁS PARA INICIAR SESIÓN</string>
+
+    <!-- Material design Icons-->
+    <string name="icon_dropdown">&#xf0d7;</string>
+    <string name="icon_left_arrow">&#xE314;</string>
+    <string name="icon_right_arrow">&#xE315;</string>
+    <string name="icon_down_arrow">&#xE313;</string>
+    <string name="icon_up_arrow">&#xE316;</string>
+    <string name="icon_location">&#xE0C8;</string>
+    <string name="no_message_availble">No Message Available </string>
+
+    <!--search contact fragment-->
+    <string name="search_type_mail_name">Type name or email</string>
+    <string name="search_users">Search Users</string>
+
+    <!--one time password strings-->
+    <string name="after_send_code_done">Por favor revisa tu correo registrado</string>
+
+    <!--if /sync socket not able to connect-->
+    <string name="unableToConnect">No puede conectarse</string>
+    <string name="msg_not_available">Mensajes no disponibles</string>
+
+    <!--Contact Request Strings-->
+    <string name="wants_to_connect_with_you">Quiere conectarse contigo</string>
+</resources>

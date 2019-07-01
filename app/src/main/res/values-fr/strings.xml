@@ -1,0 +1,141 @@
+<resources>
+    <!--<string name="app_name">NativeChatApplication</string>-->
+    <string name="app_name">CloudsChat</string>
+    <!--this is french-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_removed">You can\'t send messages to this group because you\'re no longer a participant.</string>
+
+    <string name="wellcome_title">BIENVENUE AU CLOUZER CHAT</string>
+    <string name="wellcome_title1">Vous pouvez commencer avec les existants </string>
+    <string name="wellcome_title2">Clouzer Id ou en créer un nouveau</string>
+    <string name="login_frag_title">CONNECTEZ-VOUS AVEC VOTRE ID CLOUZER</string>
+    <string name="sign_frag_title">CRÉER Clouzer COMPTE</string>
+    <string name="otp_frag_title">ENTRER CODE DE VERIFICATION</string>
+    <string name="login_btn">S\'IDENTIFIER</string>
+    <string name="signup_btn">S\'INSCRIRE</string>
+    <string name="signup_text"><u>S\'INSCRIRE</u></string>
+    <string name="next_btn">PROCHAIN</string>
+    <string name="otp_verify_btn">VÉRIFIER</string>
+    <string name="txt_login"><u>s\'identifier</u></string>
+    <string name="txt_resend_otp"><u>RENVOYER LE CODE</u></string>
+    <string name="txt_reset_pwd">RÉINITIALISER LE MOT DE PASSE</string>
+    <string name="txt_reset_using_sec_code">RÉINITIALISATION À L\'AIDE DU CODE DE SÉCURITÉ</string>
+    <string name="txt_send_code">ENVOYER LE CODE</string>
+    <string name="login_id_hint">Clouzer ID</string>
+    <string name="pwd_hint">Mot de passe</string>
+    <string name="rpwd_hint">Répéter le mot de passe</string>
+    <string name="new_pwd_hint">nouveau mot de passe</string>
+    <string name="re_enter_pwd_hint">Retaper le mot de passe</string>
+    <string name="reset_pwd">RÉINITIALISER</string>
+    <string name="fname_hint">Prénom</string>
+    <string name="lname_hint">Nom de famille</string>
+    <string name="inbox_text">INBOX</string>
+    <string name="contacts_text">CONTACT</string>
+    <string name="agenda_text">ORDRE DU JOUR</string>
+    <string name="setting_text">Paramètres</string>
+
+    <string name="choose_mstormid_hint">Choisissez Clouzer ID</string>
+    <string name="pemail_id_hint">Identifiant Email personnel</string>
+    <string name="varification_hint">Cet identifiant sera utilisé pour la vérification</string>
+    <string name="progress_wait">S\'il vous plaît, attendez...</string>
+    <string name="accept_req_text"><u>ACCEPTEZ</u></string>
+    <string name="reject_req_text"><u>REJETER</u></string>
+    <string name="decline_text"><u>DÉCLIN</u></string>
+    <string name="more_details_text"><u>Plus de détails</u></string>
+    <string name="app_exit_msg">Voulez-vous sortir? </string>
+
+    <!--login time validation strings-->
+    <string name="empty_password">Le mot de passe ne peut pas être vide.</string>
+    <string name="password_short">Le mot de passe est trop court.</string>
+    <string name="password_long">Le mot de passe est trop long.</string>
+    <string name="empty_user_id">L\'ID utilisateur ne peut pas être vide.</string>
+    <string name="valid_user_id">Entrez un nom d\'utilisateur valide s\'il vous plait.</string>
+    <string name="empty_username_password">S\'il vous plaît entrer Nom d\'utilisateur et mot de passe</string>
+    <string name="forgot_password">MOT DE PASSE OUBLIÉ?</string>
+    <string name="enter_valid_password">Veuillez entrer un mot de passe valide</string>
+    <string name="login_response_not_received">Pas de réponse.Veuillez essayer de vous connecter à nouveau.</string>
+
+    <!--login success string-->
+    <string name="login_success_msg">Succès de connexion</string>
+
+    <!--sign up time validation strings-->
+    <string name="empty_firstname">Entrez votre prénom</string>
+    <string name="empty_lastname">Entrer le nom de famille</string>
+    <string name="invalid_firstname">Prénom invalide</string>
+    <string name="invalid_lastname">Nom de famille invalide</string>
+    <string name="empty_mstorm_id">Entrer Clouzer id</string>
+    <string name="invalid_mstorm_id">Identifiant Clouzer non valide</string>
+    <string name="invalid_personal_mail_id">Identifiant de courrier électronique personnel non valide</string>
+    <string name="empty_personal_mail_id">Entrer un identifiant de messagerie personnel</string>
+    <string name="empty_repeat_password">Entrez le champ de répétition du mot</string>
+    <string name="repeat_password_not_match">Mot de passe et confirmer le mot de passe ne correspond pas</string>
+    <string name="signup_response_not_received">Pas de réponse. S\'il vous plaît essayez de vous inscrire à nouveau.</string>
+    <string name="only_special_characters_or_numbers">Doit contenir au moins un caractère.</string>
+
+    <!--internet related strings-->
+    <string name="internet_not_available">Appareil non connecté à Internet</string>
+
+    <!--Create Conversation-->
+    <string name="create_conversation">Créer une conversation</string>
+    <string name="no_conversation">Pas de conversation disponible</string>
+
+    <!-- path for img intent-->
+    <string name="messages" >messages</string>
+
+    <!--drawer strings-->
+    <string name="drawer_inbox">Boîte de réception</string>
+    <string name="drawer_contacts">Contacts</string>
+    <string name="drawer_agenda">Ordre du jour</string>
+    <string name="drawer_settings">Paramètres</string>
+    <string name="drawer_log_out">Connectez - Out</string>
+    <string name="logout_que">Voulez-vous vous déconnecter?</string>
+
+    <!--add contact fragment-->
+    <string name="add_contact">Ajouter le contact</string>
+
+    <string name="no_msg_available">Aucun message à l\'intérieur du groupe</string>
+    <string name="no_message_availble">No Message Available </string>
+
+    <!-- Material design Icons-->
+    <string name="icon_dropdown">&#xf0d7;</string>
+    <string name="icon_left_arrow">&#xE314;</string>
+    <string name="icon_right_arrow">&#xE315;</string>
+    <string name="icon_down_arrow">&#xE313;</string>
+    <string name="icon_up_arrow">&#xE316;</string>
+    <string name="icon_location">&#xE0C8;</string>
+
+    <!--search contact fragment-->
+    <string name="search_type_mail_name">Type name or email</string>
+    <string name="search_users">Search Users</string>
+
+    <!--one time password strings-->
+    <string name="after_send_code_done">S\'il vous plaît vérifier votre courrier recommandé</string>
+
+    <!--if /sync socket not able to connect-->
+    <string name="unableToConnect">Impossible de se connecter</string>
+
+    <string name="msg_not_available">Messages non disponibles</string>
+
+    <!--Contact Request Strings-->
+    <string name="wants_to_connect_with_you">Veut se connecter avec vous</string>
+
+    <!--Forgot password strings-->
+    <string name="recover_password">Récupérer mot de passe</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="personal_emailid">Identifiant email personnel</string>
+    <string name="submit">Soumettre</string>
+    <string name="forget_password">Email sent to mail id</string>
+    <string name="forgot_password_wrong_username">Le nom d\'utilisateur ou l\'identifiant de messagerie personnel est incorrect, veuillez le saisir à nouveau.</string>
+    <string name="empty_password_resetPassword">S\'il vous plaît entrer le mot de passe et réinitialiser le mot de passe</string>
+    <string name="password_reset_done">Réinitialisation du mot de passe effectuée avec succès ...</string>
+    <string name="empty_username_emailId">S\'il vous plaît, entrez votre nom d\'utilisateur et votre email</string>
+    <string name="invalid_username_emailId">Veuillez entrer un nom d\'utilisateur et un identifiant de messagerie valides</string>
+
+    <!--Change password strings-->
+    <string name="change_pwd">CHANGER LE MOT DE PASSE</string>
+    <string name="confirm_new_pwd">Confirmer le nouveau mot de passe</string>
+    <string name="set_new_pwd">SET NEW PASSWORD</string>
+    <string name="back_to_login">RETOUR CONNEXION</string>
+</resources>

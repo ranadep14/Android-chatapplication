@@ -1,0 +1,54 @@
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_main_actionbar"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:layout_height="@dimen/px_45"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px_10"
+            android:padding="@dimen/px_5"
+            android:scaleType="center"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/txt_action_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px_10"
+            android:text="@string/search_users"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/px_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px_15"
+            android:layout_marginRight="@dimen/px_10"
+            android:src="@drawable/ic_mark"/>
+
+    </LinearLayout>
+</RelativeLayout>

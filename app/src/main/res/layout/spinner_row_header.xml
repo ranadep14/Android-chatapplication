@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ll_spinner_container"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:orientation="horizontal">
+  <!--android:background="@drawable/edit_background"-->
+  <TextView
+      android:id="@+id/txt_spinner_header_left_symbol"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:layout_marginLeft="@dimen/px_10"
+      android:padding="0dp"
+      android:text="icon"
+      android:textColor="@color/appTextColor"
+      android:alpha=".82"
+      android:textSize="@dimen/px_20"
+      android:layout_weight="3"/>
+  <TextView
+      android:id="@+id/txt_spinner_header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center_vertical"
+      android:layout_gravity="center"
+      android:text="title"
+      android:textColor="@color/appTextColor"
+      android:alpha=".82"
+      android:textSize="@dimen/px_16" />
+ <!-- <TextView
+    style="@android:style/Widget.EditText"
+    android:background="@android:color/transparent"
+    android:id="@+id/txt_spinner_header_error"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"/>-->
+  <TextView
+    android:id="@+id/txt_spinner_header_right_symbol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="right"
+    android:textAlignment="gravity"
+    android:layout_marginRight="@dimen/px_5"
+    android:padding="0dp"
+    android:text="ico"
+      android:textColor="@color/appTextColor"
+      android:textSize="@dimen/px_20"
+    android:textStyle="bold"
+    android:layout_weight="3"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_search_bar"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_height="@dimen/px_50"
+    android:visibility="gone">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="@dimen/px_45"
+            android:layout_height="@dimen/px_35"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/px_22"
+                android:layout_height="@dimen/px_22"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_back_arrow"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_18"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:hint="Search Messages"
+            android:textColorHint="@color/colorDescriptionTxt"
+            android:textColor="@color/colorBlack"
+            android:backgroundTint="@color/colorTransparent"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/ll_clear_txt"
+            android:layout_width="@dimen/px_45"
+            android:layout_height="@dimen/px_35"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img_clear_txt"
+                android:layout_width="@dimen/px_22"
+                android:layout_height="@dimen/px_22"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_close"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

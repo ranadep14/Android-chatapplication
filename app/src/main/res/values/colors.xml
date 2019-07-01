@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#FF02407F</color>
+    <color name="colorPrimaryDark">#FF02407F</color>-->
+    <color name="colorPrimary">#003E7E</color>
+    <color name="colorPrimaryDark">#003E7E</color>
+    <color name="colorAccent">#003E7E</color>
+
+
+    <color name="appAssetColor">#FF02407F</color>
+    <color name="appBackgroundColor">#FFFFFFFF</color>
+    <color name="appTextColor">#626262</color>
+    <color name="appTextHintColor">#B0B0B0</color>
+
+
+    <color name="colorBlack" >#000000</color>
+    <color name="colorWhite" >#FFFFFF</color>
+    <color name="ProgColor" >#f22c2c</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorDisabled">#30000000</color>
+    <color name="colorBtnDark">#003E7E</color>
+    <color name="colorBtnTransBorder">#979797</color>
+    <color name="colorBtnTranseParentText">#003E7E</color>
+    <color name="colorEdittextBorder">#E1E1E1</color>
+    <color name="colorTitleTxt">#8F8F8F</color>
+    <color name="colorBlueTxt">#225890</color>
+    <color name="colorDescriptionTxt">#9F9F9F</color>
+    <color name="colordivider">#C2C2C2</color>
+    <color name="colorMsgOutBg">#EFF7FF</color>
+    <color name="colorMsgText">#212121</color>
+    <color name="colorMsgAll">#A3C7EC</color>
+    <color name="accept_req">#417505</color>
+    <color name="reject_req">#D0021B</color>
+    <color name="colorLinkTxt">#4A90E2</color>
+    <color name="colorItemSelected">#A8C0D9</color>
+    <color name="colorReqStatus">#F7B446</color>
+    <color name="colorFlottingMsgBg">#363636</color>
+    <color name="colorNavSelectedBg">#C5D0DB</color>
+    <color name="colorNavSelectedText">#003E7E</color>
+    <color name="colorDisable">#20000000</color>
+    <color name="colour_grey">#C0C0C0</color>
+</resources>

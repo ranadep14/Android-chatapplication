@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_agenda_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cloudsinc.soulmobile.nativechatapplication.fragments.chat.ChatListFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/agendaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_weight="1">
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_eventList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/px_5"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="false"
+                android:smoothScrollbar="true"
+                android:visibility="visible" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_dataevent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_no_dataevent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Events not available"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlueTxt"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+
+            <ProgressBar
+                android:id="@+id/prg_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressTint="@color/colorBlueTxt"
+                android:layout_gravity="center"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/px_10"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_addevent"
+                android:background="@drawable/btn_round_unblock"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_40"
+                android:text="Add Event"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorBlueTxt"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

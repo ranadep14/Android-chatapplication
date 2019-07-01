@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.cloudsinc.welltekmobile.nativechatapplication.fragments.conversation.CreateConversationFragment">
+    <include layout="@layout/cutomise_action_bar_back"/>
+    <ScrollView
+        android:id="@+id/scroll_creategrp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_marginBottom="@dimen/px_10"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_50"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="CREATE CONVERSATION"
+                    android:singleLine="true"
+                    android:textSize="@dimen/px_18"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="@dimen/px_150"
+                android:layout_height="@dimen/px_150"
+                android:layout_gravity="center"
+                android:background="@drawable/profile_shadow">
+
+
+                <ImageView
+                    android:id="@+id/img_grp_profile"
+                    android:layout_width="@dimen/px_150"
+                    android:layout_height="@dimen/px_150"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/group_icon" />
+
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_edit_grp"
+                    android:layout_width="@dimen/px_50"
+                    android:layout_height="@dimen/px_50"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true"
+                    android:src="@drawable/ic_edit"
+                    app:layout_anchorGravity="bottom|right|end" />
+
+
+                <ProgressBar
+                    android:id="@+id/search_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_100"
+                    android:layout_centerInParent="true"
+                    android:progressTint="@color/colorBlueTxt"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_65"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/edit_group_nm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_50"
+                    style="@style/edittext_style"
+                    android:paddingLeft="@dimen/px_15"
+                    android:paddingRight="@dimen/px_15"
+                    android:hint="Group Title"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_65"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <Spinner
+                    android:id="@+id/spin_persona"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_50"
+                    style="@style/edittext_style"
+                    android:paddingLeft="@dimen/px_5"
+                    android:paddingRight="@dimen/px_15"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_65"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px_50"
+                        style="@style/edittext_style"
+                        android:paddingLeft="@dimen/px_15"
+                        android:paddingRight="@dimen/px_15"
+                        android:hint="Enter user email id"
+                        android:maxLength="40"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionDone"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/img_search_contact"
+                        android:layout_width="@dimen/px_50"
+                        android:layout_height="@dimen/px_50"
+                        android:padding="@dimen/px_10"
+                        android:src="@drawable/ic_search1"
+                        android:alpha=".52"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_120"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_mail_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_120"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_65"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/px_5">
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px_50"
+                        android:text="CANCEL"
+                        style="@style/btn_trans_style"
+                        android:textSize="@dimen/px_20"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"/>
+                    <Button
+                        android:id="@+id/btn_create"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px_50"
+                        android:text="CREATE"
+                        style="@style/btn_style"
+                        android:textSize="@dimen/px_20"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_chat_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_weight="1">
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            style="@style/SpinKitView.FadingCircle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent"/>
+    </LinearLayout>
+
+</LinearLayout>

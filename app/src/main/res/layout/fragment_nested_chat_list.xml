@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_chat_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true"
+    android:minWidth="1500dp"
+    android:minHeight="1500dp"
+    android:orientation="vertical"
+
+    tools:context="com.cloudsinc.welltekmobile.nativechatapplication.fragments.chat.ChatListFragment">
+    <include layout="@layout/nested_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_thread"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_chat_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/li_msg"
+                android:layout_below="@+id/lbl"
+                android:layout_marginBottom="@dimen/px_5"
+                android:layout_weight="1"
+                android:smoothScrollbar="true"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:id="@+id/progress_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progressTint="@color/colorBlueTxt"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/li_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginRight="@dimen/px_10"
+                android:layout_marginBottom="@dimen/px_10"
+                android:background="@drawable/send_msg_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingTop="@dimen/px_5"
+                android:paddingRight="@dimen/px_10"
+                android:paddingBottom="@dimen/px_5">
+
+                <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                    android:id="@+id/edit_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px_5"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorTransparent"
+                    android:hint="Type your message"
+                    android:imeOptions="actionNone"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="@dimen/px_8"
+                    android:maxLines="10"
+                    android:padding="@dimen/px_5"
+                    android:saveEnabled="false"
+                    android:singleLine="false"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorDescriptionTxt"
+                    android:textSize="@dimen/px_16"
+                    emojicon:emojiconSize="@dimen/px_20"></hani.momanii.supernova_emoji_library.Helper.EmojiconEditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_30"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/px_2"
+                    android:layout_weight="2.9"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_imoji"
+                        android:layout_width="@dimen/px_25"
+                        android:layout_height="@dimen/px_25"
+                        android:layout_gravity="center"
+                        android:alpha=".52"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_sentiment_satisfied" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_img_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_30"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.9"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_send"
+                        android:layout_width="@dimen/px_25"
+                        android:layout_height="@dimen/px_25"
+                        android:layout_gravity="center"
+                        android:alpha=".52"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_send" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

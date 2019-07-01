@@ -1,0 +1,204 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_contact_search"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lin_main_actionbar"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_height="@dimen/px_45"
+         >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_10"
+                android:src="@drawable/ic_back" />
+            <TextView
+                android:id="@+id/txt_action_title"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/px_16"
+                android:layout_gravity="center_vertical"
+                android:text="@string/search_users"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            >
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <!-- <EditText
+         android:id="@+id/edit_uname1"
+         android:layout_margin="@dimen/px_10"
+         android:layout_marginTop="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/px_50"
+         style="@style/edittext_style"
+         android:paddingLeft="@dimen/px_15"
+         android:paddingRight="@dimen/px_15"
+         android:hint="@string/search_type_mail_name"
+         android:imeOptions="actionSearch"
+         android:drawableRight="@drawable/ic_search1"
+         android:inputType="textEmailAddress"/>
+
+ -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <EditText
+            android:id="@+id/edit_uname"
+            android:layout_margin="@dimen/px_10"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_50"
+            style="@style/edittext_style"
+            android:paddingLeft="@dimen/px_15"
+            android:paddingRight="@dimen/px_15"
+            android:hint="Enter First name Last name"
+            android:imeOptions="actionSearch"
+            android:inputType="textEmailAddress"
+            />
+
+        <ImageView
+            android:id="@+id/imageVSearch"
+            android:layout_width="@dimen/px_28"
+            android:layout_height="@dimen/px_28"
+            android:layout_alignRight="@+id/edit_uname"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_search1"
+            />
+
+    </RelativeLayout>
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal"
+         style="@style/edittext_style"
+         >
+
+         <EditText
+             android:layout_marginTop="10dp"
+             android:id="@+id/edit_uname1"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/px_50"
+             android:paddingLeft="@dimen/px_15"
+             android:hint="@string/search_type_mail_name"
+             android:imeOptions="actionSearch"
+             android:inputType="textEmailAddress"
+             android:layout_weight="1"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/px_50"
+             android:layout_weight="2.55"
+             android:layout_marginTop="10dp"
+             android:paddingRight="@dimen/px_15"
+             >
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:paddingLeft="@dimen/px_50"
+                 android:src="@drawable/ic_search1" />
+
+         </LinearLayout>
+
+
+
+
+
+
+     </LinearLayout>-->
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="@dimen/px_18"
+        android:layout_marginLeft="@dimen/px_15"
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:id="@+id/ll_search_contact_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rec_user_list"
+            android:layout_weight="1"
+            android:visibility="visible"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_weight="1">
+        <ProgressBar
+            android:id="@+id/prg_searchlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:progress="100"
+            android:progressTint="@color/colorBlueTxt"
+            android:visibility="gone"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/txt_no_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Please search contacts"
+            android:textSize="@dimen/px_18"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/px_20"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+
+</LinearLayout>

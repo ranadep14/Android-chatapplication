@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:minWidth="1500dp"
+    android:minHeight="1500dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/lbl_addinvitee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/px_10"
+        android:text="Add Invitee"
+        android:textSize="@dimen/px_16" />
+
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="@dimen/px_20"
+        android:layout_height="@dimen/px_20"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_close"
+        tools:ignore="RtlCompat" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lbl_addinvitee"
+        android:background="#c0c0c0"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_addinvitee">
+
+        <EditText
+            android:id="@+id/edit_search"
+            style="@style/edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_40"
+            android:layout_margin="@dimen/px_10"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner1"
+            android:hint="Search Invitee"
+            android:imeOptions="actionSearch"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/px_15"
+            android:paddingRight="@dimen/px_15"
+            android:textColor="@color/colorBlack" />
+
+        <ImageView
+            android:id="@+id/imageSearch"
+            android:layout_width="@dimen/px_25"
+            android:layout_height="@dimen/px_25"
+            android:layout_alignRight="@+id/edit_search"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="@dimen/px_5"
+            android:src="@drawable/ic_search1"
+            android:tint="@color/colorBlack" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_search"
+        android:layout_above="@+id/btn_ok"
+        android:layout_marginBottom="@dimen/px_10"
+        android:layout_marginRight="@dimen/px_10"
+        android:layout_marginLeft="@dimen/px_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_search_contact_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_invitee_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_no_userdata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <ProgressBar
+                android:id="@+id/prg_searchuser"
+                android:layout_width="@dimen/px_50"
+                android:layout_height="@dimen/px_50"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:indeterminateTint="@color/colorBtnDark"
+                android:progress="100"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_no_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/px_20"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Search user here..."
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/px_18"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px_10"
+        android:alpha="0.5"
+        android:background="@drawable/rounded_corner"
+        android:text="DONE"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
